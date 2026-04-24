@@ -3,28 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Миний хуримтлалын зорилго — 10-13 нас</title>
+<title>Ирээдүйн төлөвлөгөө — 16-18 нас</title>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --teal: #00BFA5;
-    --teal-dark: #008C7A;
-    --teal-light: #B2DFDB;
-    --yellow: #FFD600;
-    --yellow-light: #FFF9C4;
-    --orange: #FF8C00;
-    --blue: #1565C0;
-    --blue-light: #E3F2FD;
-    --green: #43A047;
-    --purple: #7B1FA2;
-    --white: #FFFFFF;
-    --bg: #E0F7FA;
-    --star: #FFD600;
-  }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     font-family: 'Nunito', sans-serif;
-    background: #0d0d1f;
+    background: #12080a;
     min-height: 100vh;
     padding: 16px;
     position: relative;
@@ -32,271 +17,352 @@
   }
 
   .page {
-    max-width: 860px; margin: 0 auto;
+    max-width: 900px; margin: 0 auto;
     background:
-      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Ccircle cx='8' cy='8' r='1.5' fill='rgba(255,100,200,0.2)'/%3E%3Ccircle cx='40' cy='6' r='1' fill='rgba(100,220,255,0.18)'/%3E%3Ccircle cx='72' cy='10' r='1.8' fill='rgba(100,255,180,0.18)'/%3E%3Ccircle cx='20' cy='28' r='1.2' fill='rgba(255,220,0,0.16)'/%3E%3Ccircle cx='60' cy='25' r='1' fill='rgba(180,100,255,0.16)'/%3E%3Ccircle cx='6' cy='48' r='1' fill='rgba(255,100,200,0.15)'/%3E%3Ccircle cx='74' cy='44' r='1.3' fill='rgba(100,220,255,0.15)'/%3E%3Ccircle cx='35' cy='58' r='1.6' fill='rgba(100,255,180,0.15)'/%3E%3Ccircle cx='10' cy='72' r='1' fill='rgba(255,220,0,0.16)'/%3E%3Ccircle cx='65' cy='70' r='1.3' fill='rgba(255,100,200,0.15)'/%3E%3Cpolygon points='50,15 51.5,19.5 56,19.5 52.5,22 54,26.5 50,24 46,26.5 47.5,22 44,19.5 48.5,19.5' fill='rgba(255,220,0,0.18)'/%3E%3Cpolygon points='25,55 26,58 29,58 26.5,60 27.5,63 25,61.5 22.5,63 23.5,60 21,58 24,58' fill='rgba(100,220,255,0.16)'/%3E%3C/svg%3E"),
-      linear-gradient(160deg, #1a0535 0%, #100328 50%, #08021a 100%);
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Ccircle cx='8' cy='8' r='1.2' fill='rgba(255,180,0,0.15)'/%3E%3Ccircle cx='40' cy='6' r='0.8' fill='rgba(255,120,0,0.12)'/%3E%3Ccircle cx='72' cy='10' r='1.5' fill='rgba(255,200,50,0.13)'/%3E%3Ccircle cx='20' cy='25' r='1' fill='rgba(255,180,0,0.1)'/%3E%3Ccircle cx='60' cy='22' r='1.2' fill='rgba(255,100,0,0.1)'/%3E%3Ccircle cx='6' cy='45' r='0.8' fill='rgba(255,220,0,0.12)'/%3E%3Ccircle cx='75' cy='42' r='1' fill='rgba(255,180,0,0.1)'/%3E%3Ccircle cx='35' cy='55' r='1.5' fill='rgba(255,150,0,0.1)'/%3E%3Ccircle cx='10' cy='70' r='1' fill='rgba(255,200,0,0.12)'/%3E%3Ccircle cx='65' cy='68' r='1.2' fill='rgba(255,180,0,0.13)'/%3E%3Cline x1='0' y1='40' x2='80' y2='40' stroke='rgba(255,180,0,0.04)' stroke-width='0.5'/%3E%3Cline x1='40' y1='0' x2='40' y2='80' stroke='rgba(255,120,0,0.04)' stroke-width='0.5'/%3E%3C/svg%3E"),
+      linear-gradient(160deg, #1a0d00 0%, #130a00 40%, #0d0600 100%);
     background-size: 80px 80px, auto;
     border-radius: 24px; padding: 20px;
-    box-shadow: 0 0 80px rgba(255,80,200,0.2), 0 0 40px rgba(80,150,255,0.12);
+    box-shadow: 0 0 60px rgba(255,160,0,0.2), 0 0 30px rgba(255,80,0,0.1);
     position: relative; z-index: 1; isolation: isolate;
-    border: 2px solid rgba(255,100,200,0.4);
+    border: 2px solid rgba(255,180,0,0.3);
   }
 
   /* Header */
   .header {
-    display: flex; align-items: flex-start; justify-content: space-between;
+    display: flex; align-items: center; justify-content: space-between;
     margin-bottom: 16px; flex-wrap: wrap; gap: 10px;
   }
   .age-badge {
-    background: linear-gradient(135deg, #FF64C8, #C026A0);
-    border-radius: 14px; padding: 6px 14px;
-    font-size: 13px; font-weight: 900; color: #fff; line-height: 1.2;
-    box-shadow: 0 0 20px rgba(255,100,200,0.5);
-    flex-shrink: 0;
+    background: linear-gradient(135deg, rgba(255,180,0,0.15), rgba(255,100,0,0.15));
+    border-radius: 14px; padding: 6px 16px;
+    font-size: 13px; font-weight: 900; color: #FFB800; line-height: 1.2;
+    border: 1.5px solid rgba(255,180,0,0.5);
+    text-shadow: 0 0 10px rgba(255,180,0,0.8);
   }
   .age-badge span { display: block; font-size: 22px; }
 
   .title {
     font-size: clamp(18px, 4vw, 26px); font-weight: 900;
-    color: #FF64C8; text-align: center; flex: 1;
-    text-shadow: 0 0 20px rgba(255,100,200,0.8), 0 0 40px rgba(255,100,200,0.3);
-    white-space: normal; word-break: keep-all;
+    color: #FFB800; text-align: center; flex: 1;
+    text-shadow: 0 0 20px rgba(255,180,0,0.7), 0 0 40px rgba(255,180,0,0.3);
+    letter-spacing: 0.5px;
   }
 
   .name-date {
-    background: rgba(255,100,200,0.08); border-radius: 12px;
-    padding: 10px 14px; min-width: 180px; flex-shrink: 0;
-    border: 1.5px solid rgba(255,100,200,0.3);
+    background: rgba(255,180,0,0.06); border-radius: 12px;
+    padding: 10px 14px; min-width: 190px;
+    border: 1.5px solid rgba(255,180,0,0.25);
   }
-  @media(max-width: 600px) {
-    .header { flex-direction: column; }
-    .name-date { width: 100%; min-width: unset; }
-  }
-  .name-date label { display: block; color: #FF9FDC; font-size: 12px; font-weight: 700; margin-bottom: 4px; }
+  .name-date label { display: block; color: #FFB800; font-size: 12px; font-weight: 700; margin-bottom: 4px; opacity: 0.85; }
   .name-date input {
-    background: rgba(255,255,255,0.08); border: 1px solid rgba(255,100,200,0.35);
+    background: rgba(255,255,255,0.07); border: 1px solid rgba(255,180,0,0.3);
     border-radius: 8px; padding: 6px 10px; width: 100%;
     font-family: 'Nunito', sans-serif; font-size: 13px; font-weight: 600;
     color: #fff; outline: none; margin-bottom: 6px;
   }
-  .name-date input::placeholder { color: rgba(255,255,255,0.3); }
-  .name-date input:focus { border-color: #FF64C8; box-shadow: 0 0 8px rgba(255,100,200,0.35); }
+  .name-date input::placeholder { color: rgba(255,255,255,0.35); }
+  .name-date input:focus { border-color: #FFB800; box-shadow: 0 0 8px rgba(255,180,0,0.3); }
 
-  /* Cards grid */
+  /* Cards */
   .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
   @media(max-width: 600px) { .cards { grid-template-columns: 1fr; } }
 
   .card {
     border-radius: 18px; padding: 16px;
+    backdrop-filter: blur(10px);
     position: relative; z-index: 2;
   }
-  .card-step { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+  .card-step { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+
   .step-num {
-    width: 34px; height: 34px; border-radius: 50%;
+    width: 32px; height: 32px; border-radius: 50%;
     display: flex; align-items: center; justify-content: center;
-    font-size: 16px; font-weight: 900; color: #fff; flex-shrink: 0;
+    font-size: 15px; font-weight: 900; color: #fff; flex-shrink: 0;
   }
-  .step-label { font-size: 11px; font-weight: 700; letter-spacing: 0.5px; }
-  .card-title { font-size: 15px; font-weight: 900; line-height: 1.2; }
+  .step-label { font-size: 10px; font-weight: 800; letter-spacing: 1px; }
+  .card-title { font-size: 14px; font-weight: 900; line-height: 1.3; }
+  .field-label { font-size: 11px; font-weight: 700; margin-bottom: 5px; display: block; }
 
-  /* Card 1 - ягаан neon */
+  /* Card 1 - алтан neon */
   .card-1 {
-    background: linear-gradient(135deg, rgba(255,80,180,0.18), rgba(180,40,140,0.14));
-    border: 1.5px solid rgba(255,100,200,0.5);
-    box-shadow: 0 0 24px rgba(255,80,180,0.15), inset 0 0 20px rgba(255,80,180,0.06);
+    background: linear-gradient(135deg, rgba(200,140,0,0.2), rgba(150,80,0,0.15));
+    border: 1.5px solid rgba(255,180,0,0.5);
+    box-shadow: 0 0 20px rgba(255,160,0,0.15), inset 0 0 20px rgba(255,160,0,0.05);
   }
-  .card-1 .step-num { background: linear-gradient(135deg, #FF64C8, #C026A0); box-shadow: 0 0 14px rgba(255,100,200,0.7); }
-  .card-1 .step-label { color: #F9A8D4; }
-  .card-1 .card-title { color: #FBC7E4; text-shadow: 0 0 10px rgba(255,100,200,0.6); }
+  .card-1 .step-num { background: linear-gradient(135deg, #F59E0B, #B45309); box-shadow: 0 0 12px rgba(245,158,11,0.7); }
+  .card-1 .step-label { color: #FCD34D; }
+  .card-1 .card-title { color: #FDE68A; text-shadow: 0 0 10px rgba(255,200,0,0.5); }
+  .card-1 .field-label { color: #FCD34D; }
 
-  .wish-icons { display: flex; gap: 8px; margin: 8px 0; flex-wrap: wrap; }
-  .wish-icon {
-    font-size: 28px; cursor: pointer; border-radius: 10px; padding: 5px 7px;
-    transition: transform 0.15s, box-shadow 0.15s;
-    border: 2px solid transparent; user-select: none;
-    background: rgba(255,255,255,0.05);
+  .goal-input {
+    width: 100%; padding: 9px 12px; margin-bottom: 10px;
+    background: rgba(255,255,255,0.07); border: 1.5px solid rgba(255,180,0,0.4);
+    border-radius: 10px; font-family: 'Nunito', sans-serif;
+    font-size: 13px; font-weight: 600; color: #fff; outline: none;
   }
-  .wish-icon:hover { transform: scale(1.2); background: rgba(255,100,200,0.15); box-shadow: 0 0 12px rgba(255,100,200,0.4); }
-  .wish-icon.selected { border-color: #FF64C8; background: rgba(255,100,200,0.2); transform: scale(1.15); box-shadow: 0 0 14px rgba(255,100,200,0.5); }
+  .goal-input::placeholder { color: rgba(255,255,255,0.3); }
+  .goal-input:focus { border-color: #FFB800; box-shadow: 0 0 8px rgba(255,180,0,0.35); }
 
-  .hint-text { font-size: 12px; color: #F9A8D4; margin-bottom: 6px; }
-  .draw-area {
-    width: 100%; min-height: 80px; border: 1.5px solid rgba(255,100,200,0.35);
-    border-radius: 10px; padding: 8px; font-family: 'Nunito', sans-serif;
-    font-size: 14px; color: #fff; resize: vertical; outline: none;
-    background: rgba(255,80,180,0.08);
+  .goal-type { margin-bottom: 10px; }
+  .goal-type label { font-size: 11px; color: #FCD34D; font-weight: 700; display: block; margin-bottom: 6px; }
+  .type-btns { display: flex; gap: 5px; flex-wrap: wrap; }
+  .type-btn {
+    padding: 4px 10px; border-radius: 20px; font-size: 11px; font-weight: 700;
+    cursor: pointer; border: 1.5px solid rgba(255,180,0,0.35);
+    color: #FCD34D; background: rgba(255,180,0,0.08);
+    font-family: 'Nunito', sans-serif; transition: all 0.15s;
   }
-  .draw-area::placeholder { color: rgba(255,255,255,0.3); }
-  .draw-area:focus { border-color: #FF64C8; box-shadow: 0 0 8px rgba(255,100,200,0.3); }
+  .type-btn:hover, .type-btn.active {
+    background: rgba(255,180,0,0.3); color: #fff; border-color: #FFB800;
+    box-shadow: 0 0 10px rgba(255,180,0,0.4);
+  }
 
-  /* Card 2 - цэнхэр neon */
+  .textarea-field {
+    width: 100%; min-height: 65px; padding: 9px 12px;
+    background: rgba(255,255,255,0.07); border: 1.5px solid rgba(255,180,0,0.3);
+    border-radius: 10px; font-family: 'Nunito', sans-serif;
+    font-size: 12px; color: #fff; outline: none; resize: vertical;
+  }
+  .textarea-field::placeholder { color: rgba(255,255,255,0.3); }
+  .textarea-field:focus { border-color: #FFB800; box-shadow: 0 0 8px rgba(255,180,0,0.3); }
+
+  /* Card 2 - улбар шар neon */
   .card-2 {
-    background: linear-gradient(135deg, rgba(0,120,255,0.18), rgba(0,70,180,0.14));
-    border: 1.5px solid rgba(0,180,255,0.5);
-    box-shadow: 0 0 24px rgba(0,150,255,0.15), inset 0 0 20px rgba(0,150,255,0.06);
+    background: linear-gradient(135deg, rgba(180,80,0,0.2), rgba(120,40,0,0.15));
+    border: 1.5px solid rgba(255,120,0,0.45);
+    box-shadow: 0 0 20px rgba(255,100,0,0.15), inset 0 0 20px rgba(255,100,0,0.05);
   }
-  .card-2 .step-num { background: linear-gradient(135deg, #0EA5E9, #0369A1); box-shadow: 0 0 14px rgba(14,165,233,0.7); }
-  .card-2 .step-label { color: #7DD3FC; }
-  .card-2 .card-title { color: #BAE6FD; text-shadow: 0 0 10px rgba(0,200,255,0.6); }
-
-  .calc-emoji { font-size: 36px; text-align: center; display: block; margin: 4px 0 10px; filter: drop-shadow(0 0 8px rgba(0,200,255,0.6)); }
-  .field-row { margin-bottom: 10px; }
-  .field-row label { font-size: 13px; font-weight: 700; color: #7DD3FC; display: block; margin-bottom: 4px; }
+  .card-2 .step-num { background: linear-gradient(135deg, #F97316, #C2410C); box-shadow: 0 0 12px rgba(249,115,22,0.7); }
+  .card-2 .step-label { color: #FDBA74; }
+  .card-2 .card-title { color: #FED7AA; text-shadow: 0 0 10px rgba(255,120,0,0.5); }
+  .card-2 .field-label { color: #FDBA74; }
 
   .stepper { display: flex; align-items: center; gap: 4px; }
   .step-btn {
-    width: 34px; height: 38px; border-radius: 8px;
-    border: 1.5px solid rgba(0,180,255,0.45);
-    background: rgba(0,150,255,0.18); color: #7DD3FC;
-    font-size: 20px; font-weight: 900; cursor: pointer;
+    width: 32px; height: 36px; border-radius: 8px;
+    border: 1.5px solid rgba(255,120,0,0.45);
+    background: rgba(255,100,0,0.15); color: #FDBA74;
+    font-size: 18px; font-weight: 900; cursor: pointer;
     font-family: 'Nunito', sans-serif; transition: all 0.15s;
     display: flex; align-items: center; justify-content: center; flex-shrink: 0;
   }
-  .step-btn:hover { background: rgba(0,200,255,0.32); color: #fff; box-shadow: 0 0 10px rgba(0,200,255,0.45); }
+  .step-btn:hover { background: rgba(255,120,0,0.35); color: #fff; box-shadow: 0 0 8px rgba(255,120,0,0.4); }
   .step-btn:active { transform: scale(0.92); }
 
-  .field-row input {
-    flex: 1; width: 100%; padding: 8px 12px;
-    border: 1.5px solid rgba(0,180,255,0.38);
+  .num-field { margin-bottom: 8px; }
+  .num-field label { font-size: 11px; color: #FDBA74; font-weight: 700; display: block; margin-bottom: 4px; }
+  .num-field input {
+    flex: 1; padding: 8px 10px;
+    background: rgba(255,100,0,0.1); border: 1.5px solid rgba(255,120,0,0.35);
     border-radius: 10px; font-family: 'Nunito', sans-serif;
-    font-size: 15px; font-weight: 700; color: #fff;
-    background: rgba(0,150,255,0.12); outline: none;
+    font-size: 14px; font-weight: 700; color: #fff; outline: none; width: 100%;
   }
-  .field-row input:focus { border-color: #00C8FF; box-shadow: 0 0 8px rgba(0,200,255,0.35); }
-  .field-row input::placeholder { color: rgba(255,255,255,0.25); }
-  .currency { font-size: 13px; color: #7DD3FC; font-weight: 800; }
+  .num-field input:focus { border-color: #FF7800; box-shadow: 0 0 8px rgba(255,120,0,0.35); }
+  .num-field input::placeholder { color: rgba(255,255,255,0.25); }
 
-  .result-box {
-    background: linear-gradient(135deg, #0EA5E9, #0369A1);
-    border-radius: 10px; padding: 10px; text-align: center;
-    color: #fff; margin-top: 8px;
-    box-shadow: 0 0 20px rgba(14,165,233,0.35);
+  .result-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 8px; }
+  .res-card { border-radius: 10px; padding: 8px 10px; text-align: center; }
+  .res-card .rl { font-size: 10px; opacity: 0.85; margin-bottom: 2px; }
+  .res-card .rv { font-size: 16px; font-weight: 900; }
+  .res-need { background: linear-gradient(135deg, rgba(255,100,0,0.35), rgba(180,50,0,0.35)); color: #FED7AA; border: 1px solid rgba(255,120,0,0.4); box-shadow: 0 0 10px rgba(255,100,0,0.2); }
+  .res-save { background: linear-gradient(135deg, rgba(255,180,0,0.3), rgba(180,120,0,0.3)); color: #FDE68A; border: 1px solid rgba(255,180,0,0.35); box-shadow: 0 0 10px rgba(255,180,0,0.2); }
+  .res-week { background: linear-gradient(135deg, rgba(200,50,200,0.25), rgba(140,20,140,0.25)); color: #F0ABFC; border: 1px solid rgba(200,100,255,0.35); box-shadow: 0 0 10px rgba(200,50,200,0.15); margin-top: 6px; grid-column: span 2; }
+
+  .duration-row { margin-top: 10px; }
+  .dur-label { font-size: 11px; color: #FDBA74; font-weight: 700; margin-bottom: 6px; display: block; }
+  .dur-btns { display: flex; gap: 5px; flex-wrap: wrap; }
+  .dur-btn {
+    padding: 5px 10px; border-radius: 8px; font-size: 11px; font-weight: 700;
+    cursor: pointer; border: 1.5px solid rgba(255,120,0,0.35);
+    color: #FDBA74; background: rgba(255,100,0,0.1);
+    font-family: 'Nunito', sans-serif; transition: all 0.15s;
   }
-  .result-box .result-label { font-size: 11px; opacity: 0.85; }
-  .result-box .result-val { font-size: 22px; font-weight: 900; text-shadow: 0 0 10px rgba(100,220,255,0.6); }
+  .dur-btn:hover, .dur-btn.active {
+    background: rgba(255,120,0,0.3); color: #fff; border-color: #FF7800;
+    box-shadow: 0 0 10px rgba(255,120,0,0.4);
+  }
 
-  /* Card 3 - ногоон neon */
+  /* Card 3 - ягаан/пурпур neon */
   .card-3 {
-    background: linear-gradient(135deg, rgba(0,180,100,0.18), rgba(0,110,60,0.14));
-    border: 1.5px solid rgba(0,255,150,0.45);
-    box-shadow: 0 0 24px rgba(0,200,100,0.15), inset 0 0 20px rgba(0,200,100,0.06);
+    background: linear-gradient(135deg, rgba(150,0,150,0.2), rgba(100,0,100,0.15));
+    border: 1.5px solid rgba(220,100,255,0.4);
+    box-shadow: 0 0 20px rgba(200,50,200,0.15), inset 0 0 20px rgba(200,50,200,0.05);
   }
-  .card-3 .step-num { background: linear-gradient(135deg, #10B981, #047857); box-shadow: 0 0 14px rgba(16,185,129,0.7); }
-  .card-3 .step-label { color: #6EE7B7; }
-  .card-3 .card-title { color: #A7F3D0; text-shadow: 0 0 10px rgba(0,255,150,0.6); }
+  .card-3 .step-num { background: linear-gradient(135deg, #C026D3, #86198F); box-shadow: 0 0 12px rgba(192,38,211,0.7); }
+  .card-3 .step-label { color: #E879F9; }
+  .card-3 .card-title { color: #F0ABFC; text-shadow: 0 0 10px rgba(220,100,255,0.5); }
+  .card-3 .field-label { color: #E879F9; }
 
-  .pig-emoji { font-size: 36px; text-align: center; display: block; margin: 4px 0 10px; filter: drop-shadow(0 0 8px rgba(0,255,150,0.6)); }
-  .check-list { list-style: none; }
-  .check-list li {
+  .method-list { list-style: none; }
+  .method-list li {
     display: flex; align-items: center; gap: 8px;
-    padding: 7px 10px; border-radius: 10px; margin-bottom: 6px;
-    cursor: pointer; transition: all 0.15s; font-size: 13px; font-weight: 600;
-    border: 1.5px solid transparent; color: #A7F3D0;
-    background: rgba(0,200,100,0.06);
+    padding: 7px 10px; border-radius: 10px; margin-bottom: 5px;
+    cursor: pointer; transition: all 0.15s; font-size: 12px; font-weight: 600;
+    border: 1.5px solid transparent; color: #F0ABFC;
+    background: rgba(200,50,200,0.05);
   }
-  .check-list li:hover { background: rgba(0,255,150,0.12); border-color: rgba(0,255,150,0.35); }
-  .check-list li.checked { background: rgba(0,255,150,0.18); border-color: #00FF96; color: #fff; box-shadow: 0 0 8px rgba(0,255,150,0.25); font-weight: 800; }
-  .check-list li input[type=checkbox] { width: 18px; height: 18px; cursor: pointer; accent-color: #10B981; flex-shrink: 0; }
+  .method-list li:hover { background: rgba(220,100,255,0.1); border-color: rgba(220,100,255,0.3); }
+  .method-list li.checked { background: rgba(220,100,255,0.18); border-color: #DC64FF; color: #fff; box-shadow: 0 0 8px rgba(220,100,255,0.2); font-weight: 800; }
+  .method-list li input[type=checkbox] { width: 16px; height: 16px; cursor: pointer; accent-color: #C026D3; flex-shrink: 0; }
 
-  /* Card 4 - шар neon */
+  /* Card 4 - цэнхэр neon */
   .card-4 {
-    grid-column: span 2;
-    background: linear-gradient(135deg, rgba(255,180,0,0.15), rgba(200,110,0,0.12));
-    border: 1.5px solid rgba(255,200,0,0.45);
-    box-shadow: 0 0 24px rgba(255,180,0,0.14), inset 0 0 20px rgba(255,180,0,0.05);
+    background: linear-gradient(135deg, rgba(0,80,180,0.2), rgba(0,50,120,0.15));
+    border: 1.5px solid rgba(0,180,255,0.4);
+    box-shadow: 0 0 20px rgba(0,150,255,0.15), inset 0 0 20px rgba(0,150,255,0.05);
   }
-  @media(max-width: 600px) { .card-4 { grid-column: span 1; } }
-  .card-4 .step-num { background: linear-gradient(135deg, #F59E0B, #B45309); box-shadow: 0 0 14px rgba(245,158,11,0.7); }
-  .card-4 .step-label { color: #FCD34D; }
-  .card-4 .card-title { color: #FDE68A; text-shadow: 0 0 10px rgba(255,200,0,0.6); }
+  .card-4 .step-num { background: linear-gradient(135deg, #0EA5E9, #0369A1); box-shadow: 0 0 12px rgba(14,165,233,0.7); }
+  .card-4 .step-label { color: #7DD3FC; }
+  .card-4 .card-title { color: #BAE6FD; text-shadow: 0 0 10px rgba(0,200,255,0.5); }
+  .card-4 .field-label { color: #7DD3FC; }
+  .card-4 .textarea-field { border-color: rgba(0,180,255,0.3); }
+  .card-4 .textarea-field:focus { border-color: #00B4FF; box-shadow: 0 0 8px rgba(0,180,255,0.3); }
 
-  .progress-area { margin-top: 10px; }
+  .obstacle-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-bottom: 10px; }
+  .obs-btn {
+    padding: 8px 10px; border-radius: 10px; font-size: 11px; font-weight: 700;
+    cursor: pointer; border: 1.5px solid rgba(0,180,255,0.3);
+    color: #7DD3FC; background: rgba(0,150,255,0.08);
+    font-family: 'Nunito', sans-serif; transition: all 0.15s; text-align: left; line-height: 1.4;
+  }
+  .obs-btn:hover, .obs-btn.active {
+    background: rgba(0,180,255,0.2); border-color: #00B4FF; color: #fff;
+    box-shadow: 0 0 10px rgba(0,180,255,0.3);
+  }
+
+  /* Card 5 - ногоон neon */
+  .card-5 {
+    background: linear-gradient(135deg, rgba(0,160,80,0.2), rgba(0,100,50,0.15));
+    border: 1.5px solid rgba(0,255,150,0.4);
+    box-shadow: 0 0 20px rgba(0,200,100,0.15), inset 0 0 20px rgba(0,200,100,0.05);
+  }
+  .card-5 .step-num { background: linear-gradient(135deg, #10B981, #047857); box-shadow: 0 0 12px rgba(16,185,129,0.7); }
+  .card-5 .step-label { color: #6EE7B7; }
+  .card-5 .card-title { color: #A7F3D0; text-shadow: 0 0 10px rgba(0,255,150,0.5); }
+  .card-5 .field-label { color: #6EE7B7; }
+  .card-5 .textarea-field { border-color: rgba(0,255,150,0.3); }
+  .card-5 .textarea-field:focus { border-color: #00FF96; box-shadow: 0 0 8px rgba(0,255,150,0.3); }
+
+  .commit-list { list-style: none; }
+  .commit-list li {
+    display: flex; align-items: center; gap: 8px;
+    padding: 7px 10px; border-radius: 10px; margin-bottom: 5px;
+    cursor: pointer; transition: all 0.15s; font-size: 12px; font-weight: 600;
+    border: 1.5px solid transparent; color: #A7F3D0;
+    background: rgba(0,200,100,0.05);
+  }
+  .commit-list li:hover { background: rgba(0,255,150,0.1); border-color: rgba(0,255,150,0.3); }
+  .commit-list li.checked { background: rgba(0,255,150,0.15); border-color: #00FF96; color: #fff; box-shadow: 0 0 8px rgba(0,255,150,0.2); font-weight: 800; }
+  .commit-list li input[type=checkbox] { width: 16px; height: 16px; cursor: pointer; accent-color: #10B981; flex-shrink: 0; }
+
+  /* Card 6 - Progress full width */
+  .card-6 {
+    grid-column: span 2;
+    background: linear-gradient(135deg, rgba(255,180,0,0.1), rgba(255,80,0,0.08));
+    border: 1.5px solid rgba(255,180,0,0.4);
+    box-shadow: 0 0 20px rgba(255,160,0,0.12), inset 0 0 20px rgba(255,160,0,0.04);
+  }
+  @media(max-width: 600px) { .card-6 { grid-column: span 1; } }
+  .card-6 .step-num { background: linear-gradient(135deg, #FFB800, #B45309); box-shadow: 0 0 12px rgba(255,184,0,0.7); }
+  .card-6 .step-label { color: #FCD34D; }
+  .card-6 .card-title { color: #FDE68A; text-shadow: 0 0 10px rgba(255,200,0,0.5); }
+
+  .progress-wrap { margin-top: 10px; }
   .progress-track {
     height: 28px; background: rgba(255,255,255,0.07);
-    border-radius: 14px; overflow: hidden; margin-bottom: 8px;
-    border: 1px solid rgba(255,200,0,0.25);
+    border-radius: 14px; overflow: hidden; margin-bottom: 10px;
+    border: 1px solid rgba(255,180,0,0.25);
   }
   .progress-fill {
-    height: 100%; background: linear-gradient(90deg, #FF64C8, #0EA5E9, #10B981, #F59E0B);
+    height: 100%; background: linear-gradient(90deg, #FFB800, #FF6400, #C026D3);
     border-radius: 14px; transition: width 0.6s cubic-bezier(.34,1.56,.64,1);
-    display: flex; align-items: center; justify-content: flex-end; padding-right: 8px;
-    min-width: 30px; box-shadow: 0 0 16px rgba(255,180,0,0.4);
+    display: flex; align-items: center; justify-content: flex-end; padding-right: 10px;
+    min-width: 36px; box-shadow: 0 0 15px rgba(255,160,0,0.5);
   }
-  .progress-pct { font-size: 13px; font-weight: 900; color: #fff; text-shadow: 0 1px 3px rgba(0,0,0,0.4); }
+  .progress-pct { font-size: 12px; font-weight: 900; color: #fff; }
 
-  .milestones { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px; }
-  .milestone { display: flex; flex-direction: column; align-items: center; gap: 3px; cursor: pointer; transition: transform 0.15s; }
-  .milestone:hover { transform: scale(1.1); }
-  .milestone .m-icon { font-size: 22px; filter: grayscale(0.5); }
-  .milestone .m-label {
-    background: rgba(255,255,255,0.08); border-radius: 8px; padding: 2px 7px;
-    font-size: 11px; font-weight: 800; color: rgba(255,255,255,0.5);
+  .milestones { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px; }
+  .milestone { display: flex; flex-direction: column; align-items: center; gap: 3px; cursor: pointer; }
+  .milestone .mi { font-size: 22px; transition: transform 0.2s; filter: grayscale(0.5); }
+  .milestone:hover .mi { transform: scale(1.2); }
+  .milestone .ml {
+    font-size: 10px; font-weight: 800; padding: 2px 7px;
+    border-radius: 6px; background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.5);
   }
-  .milestone.done .m-icon { filter: grayscale(0); }
-  .milestone.done .m-label { background: linear-gradient(135deg, #FF64C8, #0EA5E9); color: #fff; box-shadow: 0 0 8px rgba(255,100,200,0.45); }
+  .milestone.done .mi { filter: grayscale(0); }
+  .milestone.done .ml { background: linear-gradient(135deg, #FFB800, #F97316); color: #fff; box-shadow: 0 0 8px rgba(255,160,0,0.4); }
 
-  .amount-display {
-    text-align: center; margin-top: 10px;
-    font-size: 13px; color: #FCD34D; font-weight: 700;
+  .stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 10px; }
+  .stat-box {
+    background: rgba(255,180,0,0.08); border-radius: 10px; padding: 8px; text-align: center;
+    border: 1px solid rgba(255,180,0,0.25);
   }
-  .amount-display span { font-size: 20px; font-weight: 900; color: #FDE68A; text-shadow: 0 0 8px rgba(255,200,0,0.6); }
+  .stat-box .sl { font-size: 10px; color: #FCD34D; font-weight: 700; margin-bottom: 2px; }
+  .stat-box .sv { font-size: 15px; font-weight: 900; color: #FDE68A; }
 
   /* Submit */
   .submit-area { margin-top: 16px; text-align: center; }
+  @keyframes shake {
+    0%,100% { transform: translateX(0); }
+    20% { transform: translateX(-6px); }
+    40% { transform: translateX(6px); }
+    60% { transform: translateX(-4px); }
+    80% { transform: translateX(4px); }
+  }
+  .card.error {
+    animation: shake 0.4s ease;
+    border-color: #FF5064 !important;
+    box-shadow: 0 0 20px rgba(255,80,100,0.4) !important;
+  }
+
   .btn-submit {
-    background: linear-gradient(135deg, rgba(255,100,200,0.2), rgba(180,60,255,0.2));
-    border: 2px solid #FF64C8; border-radius: 50px; padding: 14px 40px;
+    background: linear-gradient(135deg, rgba(255,180,0,0.2), rgba(255,100,0,0.2));
+    border: 2px solid #FFB800; border-radius: 50px; padding: 14px 40px;
     font-family: 'Nunito', sans-serif; font-size: 18px; font-weight: 900;
-    color: #FF64C8; cursor: pointer;
-    box-shadow: 0 0 24px rgba(255,100,200,0.45), 0 0 50px rgba(255,100,200,0.15);
-    text-shadow: 0 0 12px rgba(255,100,200,0.9);
+    color: #FFB800; cursor: pointer;
+    box-shadow: 0 0 20px rgba(255,180,0,0.4), 0 0 40px rgba(255,180,0,0.15);
+    text-shadow: 0 0 10px rgba(255,180,0,0.8);
     transition: transform 0.15s, box-shadow 0.15s;
   }
-  .btn-submit:hover { transform: translateY(-2px) scale(1.03); box-shadow: 0 0 36px rgba(255,100,200,0.65), 0 0 70px rgba(255,100,200,0.2); }
-  .btn-submit:active { transform: scale(0.97); }
+  .btn-submit:hover { transform: translateY(-2px) scale(1.03); box-shadow: 0 0 30px rgba(255,180,0,0.6), 0 0 60px rgba(255,180,0,0.2); }
   .btn-submit:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
 
   /* Success */
   .success {
     display: none; text-align: center; padding: 30px 20px;
-    background: rgba(255,100,200,0.08); border-radius: 18px; margin-top: 16px;
-    border: 1.5px solid rgba(255,100,200,0.35);
-    box-shadow: 0 0 30px rgba(255,100,200,0.12);
+    background: rgba(255,180,0,0.08); border-radius: 18px; margin-top: 16px;
+    border: 1.5px solid rgba(255,180,0,0.3);
+    box-shadow: 0 0 30px rgba(255,180,0,0.1);
   }
   .success.show { display: block; animation: popIn 0.4s cubic-bezier(.34,1.56,.64,1); }
   .success-emoji { font-size: 60px; display: block; margin-bottom: 10px; }
-  .success h2 { color: #FF64C8; font-size: 24px; margin-bottom: 6px; text-shadow: 0 0 15px rgba(255,100,200,0.7); }
-  .success p { color: rgba(255,255,255,0.85); font-size: 15px; }
+  .success h2 { color: #FFB800; font-size: 24px; margin-bottom: 6px; text-shadow: 0 0 15px rgba(255,180,0,0.7); }
+  .success p { color: rgba(255,255,255,0.8); font-size: 15px; }
 
   @keyframes popIn { from { opacity: 0; transform: scale(0.7); } to { opacity: 1; transform: scale(1); } }
 
   /* Decorations */
-  .astronaut { font-size: 36px; position: absolute; bottom: 16px; left: 16px; animation: float 3s ease-in-out infinite; pointer-events: none; filter: drop-shadow(0 0 8px rgba(255,100,200,0.7)); }
-  .astronaut-r { font-size: 36px; position: absolute; bottom: 16px; right: 16px; animation: float 3s ease-in-out infinite 1.5s; pointer-events: none; filter: drop-shadow(0 0 8px rgba(0,200,255,0.7)); }
+  .deco-l { font-size: 32px; position: absolute; bottom: 16px; left: 16px; animation: float 3s ease-in-out infinite; pointer-events: none; filter: drop-shadow(0 0 8px rgba(255,180,0,0.6)); }
+  .deco-r { font-size: 32px; position: absolute; bottom: 16px; right: 16px; animation: float 3s ease-in-out infinite 1.5s; pointer-events: none; filter: drop-shadow(0 0 8px rgba(255,100,0,0.6)); }
 
   .bg-decos {
     position: absolute; top: 0; left: 0; width: 100%; height: 100%;
     pointer-events: none; overflow: hidden; border-radius: 22px; z-index: 0;
   }
   .bg-decos span {
-    position: absolute; animation: floatRandom 5s ease-in-out infinite; opacity: 0.7;
+    position: absolute; animation: floatRandom 5s ease-in-out infinite; opacity: 0.6;
   }
-  .bg-decos span:nth-child(1)  { font-size:32px; top:4%;  left:0.5%; animation-duration:4s;   animation-delay:0s;   filter: drop-shadow(0 0 10px rgba(255,100,200,0.8)); }
-  .bg-decos span:nth-child(2)  { font-size:30px; top:4%;  right:0.5%;animation-duration:5s;   animation-delay:0.5s; filter: drop-shadow(0 0 10px rgba(0,200,255,0.8)); }
-  .bg-decos span:nth-child(3)  { font-size:28px; top:28%; left:0.5%; animation-duration:4.5s; animation-delay:1s;   filter: drop-shadow(0 0 10px rgba(0,255,150,0.7)); }
-  .bg-decos span:nth-child(4)  { font-size:28px; top:28%; right:0.5%;animation-duration:3.8s; animation-delay:1.5s; filter: drop-shadow(0 0 10px rgba(255,220,0,0.7)); }
-  .bg-decos span:nth-child(5)  { font-size:26px; top:52%; left:0.5%; animation-duration:5.2s; animation-delay:0.8s; filter: drop-shadow(0 0 10px rgba(255,100,200,0.7)); }
-  .bg-decos span:nth-child(6)  { font-size:26px; top:52%; right:0.5%;animation-duration:4.2s; animation-delay:2s;   filter: drop-shadow(0 0 10px rgba(180,100,255,0.7)); }
-  .bg-decos span:nth-child(7)  { font-size:28px; top:76%; left:0.5%; animation-duration:4.8s; animation-delay:0.3s; filter: drop-shadow(0 0 10px rgba(0,200,255,0.7)); }
-  .bg-decos span:nth-child(8)  { font-size:28px; top:76%; right:0.5%;animation-duration:3.6s; animation-delay:1.2s; filter: drop-shadow(0 0 10px rgba(0,255,150,0.7)); }
-  .bg-decos span:nth-child(9)  { font-size:24px; top:90%; left:2%;   animation-duration:5.5s; animation-delay:0.6s; filter: drop-shadow(0 0 10px rgba(255,220,0,0.6)); }
-  .bg-decos span:nth-child(10) { font-size:24px; top:90%; right:2%;  animation-duration:4.3s; animation-delay:1.8s; filter: drop-shadow(0 0 10px rgba(255,100,200,0.6)); }
-
-  .title-floaties { display:flex; flex-direction:column; gap:5px; align-items:center; }
-  .title-floaties span { animation: floatRandom 4s ease-in-out infinite; display:block; }
-  .title-floaties span:nth-child(2) { animation-delay:0.8s; animation-duration:5s; }
-  .title-floaties span:nth-child(3) { animation-delay:1.5s; animation-duration:3.5s; }
+  .bg-decos span:nth-child(1)  { font-size:32px; top:4%;  left:0.5%; animation-duration:4s;   animation-delay:0s;   filter: drop-shadow(0 0 8px rgba(255,180,0,0.7)); }
+  .bg-decos span:nth-child(2)  { font-size:30px; top:4%;  right:0.5%;animation-duration:5s;   animation-delay:0.5s; filter: drop-shadow(0 0 8px rgba(255,100,0,0.7)); }
+  .bg-decos span:nth-child(3)  { font-size:28px; top:28%; left:0.5%; animation-duration:4.5s; animation-delay:1s;   filter: drop-shadow(0 0 8px rgba(220,100,255,0.6)); }
+  .bg-decos span:nth-child(4)  { font-size:28px; top:28%; right:0.5%;animation-duration:3.8s; animation-delay:1.5s; filter: drop-shadow(0 0 8px rgba(0,200,255,0.6)); }
+  .bg-decos span:nth-child(5)  { font-size:26px; top:52%; left:0.5%; animation-duration:5.2s; animation-delay:0.8s; filter: drop-shadow(0 0 8px rgba(255,180,0,0.6)); }
+  .bg-decos span:nth-child(6)  { font-size:26px; top:52%; right:0.5%;animation-duration:4.2s; animation-delay:2s;   filter: drop-shadow(0 0 8px rgba(0,255,150,0.6)); }
+  .bg-decos span:nth-child(7)  { font-size:28px; top:76%; left:0.5%; animation-duration:4.8s; animation-delay:0.3s; filter: drop-shadow(0 0 8px rgba(255,100,0,0.6)); }
+  .bg-decos span:nth-child(8)  { font-size:28px; top:76%; right:0.5%;animation-duration:3.6s; animation-delay:1.2s; filter: drop-shadow(0 0 8px rgba(255,180,0,0.6)); }
+  .bg-decos span:nth-child(9)  { font-size:24px; top:90%; left:2%;   animation-duration:5.5s; animation-delay:0.6s; filter: drop-shadow(0 0 8px rgba(220,100,255,0.5)); }
+  .bg-decos span:nth-child(10) { font-size:24px; top:90%; right:2%;  animation-duration:4.3s; animation-delay:1.8s; filter: drop-shadow(0 0 8px rgba(0,200,255,0.5)); }
 
   @keyframes floatRandom {
     0%   { transform: translateY(0px) rotate(0deg); }
@@ -308,41 +374,42 @@
   @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
 
   .header, .cards, .submit-area, .success { position: relative; z-index: 2; }
-  .card { position: relative; z-index: 2; }</style>
+  .card { position: relative; z-index: 2; }
+</style>
 </head>
 <body>
 <div class="page">
 
-  <!-- Background floating decorations -->
+  <!-- Background decorations -->
   <div class="bg-decos">
+    <span>🎓</span>
+    <span>✈️</span>
     <span>💰</span>
-    <span>📱</span>
-    <span>🪙</span>
+    <span>🌍</span>
+    <span>📚</span>
     <span>💳</span>
-    <span>👧</span>
-    <span>🧒</span>
-    <span>💵</span>
     <span>🏦</span>
-    <span>⭐</span>
     <span>🎯</span>
+    <span>💎</span>
+    <span>🚀</span>
   </div>
 
   <!-- Header -->
   <div class="header">
     <div class="age-badge">
-      <span>10-12 нас</span>
+      Мөрөөдлийн<br><span>16-18</span>
     </div>
-    <div class="title-wrap">
-      <div class="title-floaties">
-        <span>💰</span>
-        <span>🪙</span>
-        <span>💳</span>
+    <div class="title" style="display:flex; align-items:center; justify-content:center; gap:10px; flex:1;">
+      <div style="display:flex; flex-direction:column; gap:5px; align-items:center;">
+        <span style="font-size:26px; animation:floatRandom 3.5s ease-in-out infinite; display:block; filter:drop-shadow(0 0 8px rgba(255,180,0,0.7))">💰</span>
+        <span style="font-size:24px; animation:floatRandom 4.5s ease-in-out infinite 1s; display:block; filter:drop-shadow(0 0 8px rgba(255,100,0,0.7))">🎓</span>
+        <span style="font-size:22px; animation:floatRandom 5s ease-in-out infinite 0.5s; display:block; filter:drop-shadow(0 0 8px rgba(220,100,255,0.7))">✈️</span>
       </div>
-      <div class="title">🚀 Миний хуримтлалын зорилго</div>
-      <div class="title-floaties">
-        <span>📱</span>
-        <span>👧</span>
-        <span>🏦</span>
+      <span>🌟 Ирээдүйн санхүүгийн төлөвлөгөө</span>
+      <div style="display:flex; flex-direction:column; gap:5px; align-items:center;">
+        <span style="font-size:26px; animation:floatRandom 4s ease-in-out infinite 0.8s; display:block; filter:drop-shadow(0 0 8px rgba(0,200,255,0.7))">🌍</span>
+        <span style="font-size:24px; animation:floatRandom 3.8s ease-in-out infinite 1.5s; display:block; filter:drop-shadow(0 0 8px rgba(0,255,150,0.7))">📚</span>
+        <span style="font-size:22px; animation:floatRandom 5.2s ease-in-out infinite 0.3s; display:block; filter:drop-shadow(0 0 8px rgba(255,180,0,0.7))">💎</span>
       </div>
     </div>
     <div class="name-date">
@@ -351,203 +418,354 @@
       <label>Сургуулийн нэр:</label>
       <input type="text" id="inp-school" placeholder="Сургуулиа бичээрэй...">
       <label>Огноо:</label>
-      <input type="date" id="inp-date" >
+      <input type="date" id="inp-date">
     </div>
   </div>
 
-  <!-- Cards -->
   <div class="cards">
 
-    <!-- Card 1 -->
+    <!-- Card 1: Зорилго -->
     <div class="card card-1">
       <div class="card-step">
         <div class="step-num">1</div>
         <div>
           <div class="step-label">АЛХАМ</div>
-          <div class="card-title">Юу авмаар байна вэ? 🎯</div>
+          <div class="card-title">Миний томоохон зорилго 🎯</div>
         </div>
       </div>
-      <div class="wish-icons" id="wish-icons">
-        <span class="wish-icon" title="Дугуй" data-val="Дугуй">🚲</span>
-        <span class="wish-icon" title="Тоглоом" data-val="Тоглоом">🎮</span>
-        <span class="wish-icon" title="Цүнх" data-val="Цүнх">🎒</span>
-        <span class="wish-icon" title="Гитар" data-val="Гитар">🎸</span>
-        <span class="wish-icon" title="Ном" data-val="Ном">📚</span>
-        <span class="wish-icon" title="Утас" data-val="Утас">📱</span>
-        <span class="wish-icon" title="Шоколад" data-val="Шоколад">🍫</span>
-        <span class="wish-icon" title="Бусад" data-val="">➕</span>
+      <span class="field-label">Би юуны тулд мөнгө хуримтлуулах вэ?</span>
+      <input type="text" class="goal-input" id="inp-goal" placeholder="Жишээ нь: их дээд сургуулийн төлбөр, шинэ утас авах...">
+
+      <div class="goal-type">
+        <label>Зорилгын төрөл:</label>
+        <div class="type-btns">
+          <button class="type-btn" onclick="selectType(this,'Их дээд сургууль')">🎓 Их дээд сургууль</button>
+          <button class="type-btn" onclick="selectType(this,'Мэргэжлийн сургалт')">📜 Мэргэжлийн сургалт</button>
+          <button class="type-btn" onclick="selectType(this,'Гадаадад суралцах')">🌍 Гадаадад суралцах</button>
+          <button class="type-btn" onclick="selectType(this,'Хэл сурах')">🗣️ Хэл сурах</button>
+          <button class="type-btn" onclick="selectType(this,'Аялал')">✈️ Аялал</button>
+          <button class="type-btn" onclick="selectType(this,'Бизнес эхлүүлэх')">💼 Бизнес эхлүүлэх</button>
+          <button class="type-btn" onclick="selectType(this,'Бусад')">➕ Бусад</button>
+        </div>
       </div>
-      <p class="hint-text">🖊️ Мөрөөдлийн зүйлээ сонгож эсвэл бичиж болно:</p>
-      <textarea class="draw-area" id="inp-wish" placeholder="Би хүсэж буй зүйлээ энд бичнэ..."></textarea>
+
+      <span class="field-label">Энэ зорилго надад яагаад чухал вэ?</span>
+      <textarea class="textarea-field" id="inp-why" placeholder="Учир шалтгаанаа бичээрэй..."></textarea>
     </div>
 
-    <!-- Card 2 -->
+    <!-- Card 2: Тооцоолол -->
     <div class="card card-2">
       <div class="card-step">
         <div class="step-num">2</div>
         <div>
           <div class="step-label">АЛХАМ</div>
-          <div class="card-title">Тооцоолол хийх 🧮</div>
+          <div class="card-title">Санхүүгийн тооцоолол 🧮</div>
         </div>
       </div>
-      <span class="calc-emoji">🖩</span>
-      <div class="field-row">
-        <label>Авах зүйл чинь ямар үнэтэй вэ? <span class="currency">₮</span></label>
+
+      <div class="num-field">
+        <label>Нийт шаардлагатай мөнгө ₮</label>
         <div class="stepper">
           <button class="step-btn" onclick="stepVal('inp-price',-500)">−</button>
-          <input type="number" id="inp-price" placeholder="0" min="0" oninput="calcProgress()">
+          <input type="number" id="inp-price" placeholder="0" min="0" oninput="calcAll()">
           <button class="step-btn" onclick="stepVal('inp-price',500)">+</button>
         </div>
       </div>
-      <div class="field-row">
-        <label>Надад одоо хэдэн төгрөг байгаа вэ? <span class="currency">₮</span></label>
+      <div class="num-field">
+        <label>Одоо байгаа мөнгө ₮</label>
         <div class="stepper">
           <button class="step-btn" onclick="stepVal('inp-have',-500)">−</button>
-          <input type="number" id="inp-have" placeholder="0" min="0" oninput="calcProgress()">
+          <input type="number" id="inp-have" placeholder="0" min="0" oninput="calcAll()">
           <button class="step-btn" onclick="stepVal('inp-have',500)">+</button>
         </div>
       </div>
-      <div class="result-box" id="result-box">
-        <div class="result-label">Надад нэмэлтээр хэрэгтэй мөнгө</div>
-        <div class="result-val" id="result-val">— ₮</div>
+
+      <div class="result-cards">
+        <div class="res-card res-need">
+          <div class="rl">Дутагдаж буй мөнгө</div>
+          <div class="rv" id="res-need">0 ₮</div>
+        </div>
+        <div class="res-card res-save">
+          <div class="rl">Сарын хэмнэлт</div>
+          <div class="rv" id="res-save">— ₮</div>
+        </div>
+        <div class="res-card res-week">
+          <div class="rl">7 хоног тутмын хэмнэлт</div>
+          <div class="rv" id="res-week">— ₮</div>
+        </div>
+      </div>
+
+      <div class="duration-row">
+        <span class="dur-label">Хэдэн сарын дотор хүрэх вэ?</span>
+        <div class="dur-btns">
+          <button class="dur-btn" onclick="selectDur(this,6)">6 сар</button>
+          <button class="dur-btn" onclick="selectDur(this,12)">1 жил</button>
+          <button class="dur-btn" onclick="selectDur(this,24)">2 жил</button>
+          <button class="dur-btn" onclick="selectDur(this,36)">3 жил</button>
+        </div>
       </div>
     </div>
 
-    <!-- Card 3 -->
+    <!-- Card 3: Орлогын эх үүсвэр -->
     <div class="card card-3">
       <div class="card-step">
         <div class="step-num">3</div>
         <div>
           <div class="step-label">АЛХАМ</div>
-          <div class="card-title">Мөнгөө хэрхэн цуглуулах вэ? 🐷</div>
+          <div class="card-title">Орлогын эх үүсвэр 💜</div>
         </div>
       </div>
-      <span class="pig-emoji">🐷</span>
-      <ul class="check-list" id="check-list">
-        <li onclick="toggleCheck(this)" data-val="Уралдаан, тэмцээнд орж шагнуулах">
-          <input type="checkbox"> 🏠 Уралдаан, тэмцээнд орж шагнуулах
+      <span class="field-label">Мөнгө хэрхэн олох вэ? (Олныг сонго)</span>
+      <ul class="method-list" id="method-list">
+        <li onclick="toggleMethod(this)" data-val="Цагийн ажил хийх">
+          <input type="checkbox"> 💼 Цагийн ажил хийх
         </li>
-        <li onclick="toggleCheck(this)" data-val="Бэлгэнд авсан мөнгөө хадгалах">
+        <li onclick="toggleMethod(this)" data-val="Гар урлал хийж зарах">
+          <input type="checkbox"> 🎨 Гар урлал хийж зарах
+        </li>
+        <li onclick="toggleMethod(this)" data-val="Цахим үйлчилгээ үзүүлэх, код бичих">
+          <input type="checkbox"> 💻 Цахим үйлчилгээ үзүүлэх, код бичих
+        </li>
+        <li onclick="toggleMethod(this)" data-val="Хичээл заах, багшаар ажиллах">
+          <input type="checkbox"> 📖 Хичээл заах, хувийн багшаар ажиллах
+        </li>
+        <li onclick="toggleMethod(this)" data-val="Тэмцээн, уралдаанд орох">
+          <input type="checkbox"> 🏆 Тэмцээн, уралдаанд орох
+        </li>
+        <li onclick="toggleMethod(this)" data-val="Бэлгэнд авсан мөнгөө хадгалах">
           <input type="checkbox"> 🎁 Бэлгэнд авсан мөнгөө хадгалах
         </li>
-        <li onclick="toggleCheck(this)" data-val="Хэрэглээний мөнгөнөөсөө хадгалах">
-          <input type="checkbox"> 💰 Хэрэглээний мөнгөнөөсөө хадгалах
-        </li>
-        <li onclick="toggleCheck(this)" data-val="Бага багаар тогтмол хадгалах">
-          <input type="checkbox"> 🏦 Бага багаар тогтмол хадгалах
-        </li>
-        <li onclick="toggleCheck(this)" data-val="Хуучин ном, тоглоомоо зарж орлого олох">
-          <input type="checkbox"> 🎮 Хуучин ном, тоглоомоо зарж орлого олох
+        <li onclick="toggleMethod(this)" data-val="Хуучин эд зүйлсээ зарах">
+          <input type="checkbox"> 📦 Хуучин эд зүйлсээ зарах
         </li>
       </ul>
     </div>
 
-    <!-- Card 4 - Progress -->
+    <!-- Card 4: Саад бэрхшээл -->
     <div class="card card-4">
       <div class="card-step">
         <div class="step-num">4</div>
         <div>
           <div class="step-label">АЛХАМ</div>
-          <div class="card-title">Хуримтлалын ахиц 🌟 ---> Мөнгө цуглуулах тутамд од нэмэгдэнэ 🌟</div>
+          <div class="card-title">Саад бэрхшээл ба шийдэл 🔵</div>
         </div>
       </div>
-      <div class="progress-area">
+      <span class="field-label">Хуримтлуулахад юу саад болж болох вэ?</span>
+      <div class="obstacle-grid" id="obs-grid">
+        <button class="obs-btn" onclick="toggleObs(this)" data-val="Тогтмол зарцуулах хэвшил">💸 Хэрэгцээгүй худалдан авалт хийх хэвшил</button>
+        <button class="obs-btn" onclick="toggleObs(this)" data-val="Найзуудтайгаа цагийг өнгөрүүлэх">👫 Найзуудтайгаа цагийг өнгөрүүлэх, зугаалах</button>
+        <button class="obs-btn" onclick="toggleObs(this)" data-val="Шинэ технологи, хэрэгсэл авах хүсэл">📱 Шинэ хэрэгсэл, хувцас авах хүсэл</button>
+        <button class="obs-btn" onclick="toggleObs(this)" data-val="Орлого тогтворгүй байх">📊 Орлого тогтворгүй байх</button>
+      </div>
+      <span class="field-label" style="margin-top:10px">Саадыг хэрхэн даван туулах вэ?</span>
+      <textarea class="textarea-field" id="inp-solution" placeholder="Шийдлээ бичээрэй..."></textarea>
+    </div>
+
+    <!-- Card 5: Амлалт -->
+    <div class="card card-5">
+      <div class="card-step">
+        <div class="step-num">5</div>
+        <div>
+          <div class="step-label">АЛХАМ</div>
+          <div class="card-title">Өөртөө өгөх амлалт 🌿</div>
+        </div>
+      </div>
+      <span class="field-label">Зорилгодоо хүрэхийн тулд би юу хийхийг амлаж байна вэ?</span>
+      <ul class="commit-list" id="commit-list">
+        <li onclick="toggleCommit(this)" data-val="Сар бүр зардлаа хянах">
+          <input type="checkbox"> 📊 Сар бүр зардлаа хянах
+        </li>
+        <li onclick="toggleCommit(this)" data-val="Хэрэггүй зардлаа багасгах">
+          <input type="checkbox"> ✂️ Хэрэггүй зардлаа багасгах
+        </li>
+        <li onclick="toggleCommit(this)" data-val="Нэмэлт орлого олох боломжийг эрэлхийлэх">
+          <input type="checkbox"> 💪 Нэмэлт орлого олох боломжийг эрэлхийлэх
+        </li>
+        <li onclick="toggleCommit(this)" data-val="Зорилгоо гэр бүлдээ хэлж дэмжлэг авах">
+          <input type="checkbox"> 👨‍👩‍👧 Гэр бүлдээ хэлж дэмжлэг авах
+        </li>
+      </ul>
+      <span class="field-label" style="margin-top:8px">Нэмэлт амлалт:</span>
+      <textarea class="textarea-field" id="inp-commit" placeholder="Өөртөө урам өгөх амлалтаа бичээрэй..."></textarea>
+    </div>
+
+    <!-- Card 6: Progress -->
+    <div class="card card-6">
+      <div class="card-step">
+        <div class="step-num">6</div>
+        <div>
+          <div class="step-label">АЛХАМ</div>
+          <div class="card-title">Хуримтлалын ахиц 🌟 — Мөнгө цуглуулах тутамд алхам ахина!</div>
+        </div>
+      </div>
+      <div class="progress-wrap">
         <div class="progress-track">
           <div class="progress-fill" id="prog-fill">
             <span class="progress-pct" id="prog-pct">0%</span>
           </div>
         </div>
         <div class="milestones">
-          <div class="milestone" id="m0"><span class="m-icon">🚀</span><span class="m-label">Эхлэл</span></div>
-          <div class="milestone" id="m20"><span class="m-icon">⭐</span><span class="m-label">20%</span></div>
-          <div class="milestone" id="m40"><span class="m-icon">⭐</span><span class="m-label">40%</span></div>
-          <div class="milestone" id="m60"><span class="m-icon">⭐</span><span class="m-label">60%</span></div>
-          <div class="milestone" id="m80"><span class="m-icon">⭐</span><span class="m-label">80%</span></div>
-          <div class="milestone" id="m100"><span class="m-icon">🏆</span><span class="m-label">100%!</span></div>
+          <div class="milestone done" id="m0"><span class="mi">🚀</span><span class="ml">Эхлэл</span></div>
+          <div class="milestone" id="m25"><span class="mi">⭐</span><span class="ml">25%</span></div>
+          <div class="milestone" id="m50"><span class="mi">🌟</span><span class="ml">50%</span></div>
+          <div class="milestone" id="m75"><span class="mi">💎</span><span class="ml">75%</span></div>
+          <div class="milestone" id="m100"><span class="mi">🏆</span><span class="ml">100%!</span></div>
         </div>
-        <div class="amount-display">
-          Цугласан: <span id="disp-have">0</span> ₮ / Зорилго: <span id="disp-goal">0</span> ₮
+        <div class="stats-row">
+          <div class="stat-box"><div class="sl">Нийт зорилго</div><div class="sv" id="st-goal">0 ₮</div></div>
+          <div class="stat-box"><div class="sl">Цугласан</div><div class="sv" id="st-have">0 ₮</div></div>
+          <div class="stat-box"><div class="sl">Үлдсэн</div><div class="sv" id="st-need">0 ₮</div></div>
         </div>
       </div>
     </div>
 
   </div>
 
-  <!-- Submit -->
   <div class="submit-area">
-    <button class="btn-submit" onclick="submitForm()">🚀 Илгээх!</button>
+    <button class="btn-submit" id="submit-btn" onclick="submitForm()">🌟 Илгээх!</button>
   </div>
 
   <div class="success" id="success">
-    <span class="success-emoji">🎉</span>
-    <h2>Баяр хүргэе! Чи маш сайн байлаа!</h2>
-    <p>Чиний хуримтлалын зорилго хадгалагдлаа.<br>Одоо зорилгодоо хүрэх аялал чинь эхэллээ! 🚀⭐</p>
+    <span class="success-emoji">🎓</span>
+    <h2>Гайхалтай! Чиний ирээдүй гэрэлтэй байна!</h2>
+    <p>Чиний санхүүгийн төлөвлөгөө хадгалагдлаа.<br>Зорилгодоо хүрэх аялал эхэллээ! 🌟💎🚀</p>
   </div>
 
-  <div class="astronaut">🧑‍🚀</div>
-  <div class="astronaut-r">👾</div>
+  <div class="deco-l">🎓</div>
+  <div class="deco-r">🌍</div>
 </div>
 
 <script>
-function toggleCheck(li) {
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxjzm919yG79q6izq4VckvJ1bMXAt16kNdeysKfHlP0a7bolSO14USbszIyBDdR0Cld/exec';
+
+let selectedType = '';
+let selectedDur = 0;
+
+const GOAL_SUGGESTIONS = {
+  'Их дээд сургууль': 'Их дээд сургуулийн элсэлтийн болон сургалтын төлбөрт зориулж мөнгө хуримтлуулна.',
+  'Мэргэжлийн сургалт': 'Мэргэжлийн ур чадвар эзэмших сургалт, курст суралцахад зориулна.',
+  'Гадаадад суралцах': 'Гадаадад тэтгэлгээр эсвэл өөрийн зардлаар суралцахад шаардлагатай мөнгийг хуримтлуулна.',
+  'Хэл сурах': 'Гадаад хэлний курс, шалгалтын бэлтгэл, сурах бичиг материалд зориулна.',
+  'Аялал': 'Гадаад болон дотоод аялалд зориулж мөнгө хуримтлуулна.',
+  'Бизнес эхлүүлэх': 'Өөрийн жижиг бизнес, стартап эхлүүлэхэд шаардлагатай хөрөнгийг бүрдүүлнэ.',
+  'Бусад': '',
+};
+
+function selectType(btn, val) {
+  document.querySelectorAll('.type-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  selectedType = val;
+  const goalInput = document.getElementById('inp-goal');
+  const whyInput  = document.getElementById('inp-why');
+  if (val === 'Бусад') {
+    goalInput.value = '';
+    whyInput.value = '';
+    goalInput.placeholder = 'Зорилгоо дэлгэрэнгүй бичээрэй...';
+    goalInput.focus();
+  } else {
+    goalInput.value = val;
+    whyInput.value = GOAL_SUGGESTIONS[val] || '';
+    goalInput.focus();
+  }
+}
+
+function selectDur(btn, val) {
+  document.querySelectorAll('.dur-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  selectedDur = val;
+  calcAll();
+}
+
+function toggleMethod(li) {
   li.classList.toggle('checked');
   li.querySelector('input').checked = li.classList.contains('checked');
 }
 
-document.querySelectorAll('.wish-icon').forEach(icon => {
-  icon.addEventListener('click', () => {
-    icon.classList.toggle('selected');
-    const val = icon.dataset.val;
-    if (val) {
-      const ta = document.getElementById('inp-wish');
-      if (icon.classList.contains('selected')) {
-        ta.value = (ta.value ? ta.value + ', ' : '') + val;
-      }
-    }
-  });
-});
+function toggleObs(btn) { btn.classList.toggle('active'); }
+
+function toggleCommit(li) {
+  li.classList.toggle('checked');
+  li.querySelector('input').checked = li.classList.contains('checked');
+}
 
 function stepVal(id, delta) {
   const el = document.getElementById(id);
   const cur = parseFloat(el.value) || 0;
   el.value = Math.max(0, cur + delta);
-  calcProgress();
+  calcAll();
 }
 
-function calcProgress() {
+function calcAll() {
   const price = parseFloat(document.getElementById('inp-price').value) || 0;
   const have  = parseFloat(document.getElementById('inp-have').value)  || 0;
   const need  = Math.max(0, price - have);
-  document.getElementById('result-val').textContent = need.toLocaleString() + ' ₮';
-  document.getElementById('disp-goal').textContent = price.toLocaleString();
-  document.getElementById('disp-have').textContent = have.toLocaleString();
-  const pct = price > 0 ? Math.min(100, Math.round((have / price) * 100)) : 0;
-  document.getElementById('prog-fill').style.width = Math.max(pct, 4) + '%';
-  document.getElementById('prog-pct').textContent = pct + '%';
-  [0,20,40,60,80,100].forEach(m => {
+  const save  = selectedDur > 0 ? Math.ceil(need / selectedDur) : 0;
+  const week  = save > 0 ? Math.ceil(save / 4) : 0;
+  const pct   = price > 0 ? Math.min(100, Math.round((have / price) * 100)) : 0;
+
+  document.getElementById('res-need').textContent = need.toLocaleString() + ' ₮';
+  document.getElementById('res-save').textContent = save > 0 ? save.toLocaleString() + ' ₮' : '— ₮';
+  document.getElementById('res-week').textContent = week > 0 ? week.toLocaleString() + ' ₮' : '— ₮';
+  document.getElementById('st-goal').textContent  = price.toLocaleString() + ' ₮';
+  document.getElementById('st-have').textContent  = have.toLocaleString() + ' ₮';
+  document.getElementById('st-need').textContent  = need.toLocaleString() + ' ₮';
+
+  document.getElementById('prog-fill').style.width = Math.max(pct, 2) + '%';
+  document.getElementById('prog-pct').textContent  = pct + '%';
+
+  [0,25,50,75,100].forEach(m => {
     document.getElementById('m'+m).classList.toggle('done', pct >= m);
   });
 }
 
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzUVxMENp2QF3pbVyFoMwYqXB7VuuDIJzHHcbIa4eL1uISTHdSh197dRyzGTNKzkSTn/exec';
-
 function submitForm() {
-  const name    = document.getElementById('inp-name').value.trim();
-  const school  = document.getElementById('inp-school').value.trim();
-  const wish    = document.getElementById('inp-wish').value.trim();
-  const price   = document.getElementById('inp-price').value || '0';
-  const have    = document.getElementById('inp-have').value  || '0';
-  const methods = [...document.querySelectorAll('#check-list li.checked')].map(l => l.dataset.val);
+  const name     = document.getElementById('inp-name').value.trim();
+  const school   = document.getElementById('inp-school').value.trim();
+  const goal     = document.getElementById('inp-goal').value.trim();
+  const why      = document.getElementById('inp-why').value.trim();
+  const price    = document.getElementById('inp-price').value || '0';
+  const have     = document.getElementById('inp-have').value  || '0';
+  const solution = document.getElementById('inp-solution').value.trim();
+  const commit   = document.getElementById('inp-commit').value.trim();
+  const methods  = [...document.querySelectorAll('#method-list li.checked')].map(l => l.dataset.val);
+  const obstacles= [...document.querySelectorAll('#obs-grid .obs-btn.active')].map(b => b.dataset.val);
+  const commits  = [...document.querySelectorAll('#commit-list li.checked')].map(l => l.dataset.val);
 
-  if (!name)   { alert('Нэрээ бичнэ үү! 😊'); return; }
-  if (!school) { alert('Сургуулийн нэрээ бичнэ үү! 🏫'); return; }
-  if (!wish && !price) { alert('Мөрөөдлөө бичнэ үү! 🎯'); return; }
+  const price_val = parseFloat(document.getElementById('inp-price').value) || 0;
+  const methods_val = [...document.querySelectorAll('#method-list li.checked')];
+  const obs_val = [...document.querySelectorAll('#obs-grid .obs-btn.active')];
+  const commits_val2 = [...document.querySelectorAll('#commit-list li.checked')];
 
-  const btn = document.querySelector('.btn-submit');
+  function errCard(cardClass, msg) {
+    const card = document.querySelector('.' + cardClass);
+    card.classList.add('error');
+    setTimeout(() => card.classList.remove('error'), 600);
+    card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    setTimeout(() => alert(msg), 300);
+  }
+
+  if (!name || !school) { errCard('name-date', 'Нэр болон сургуулийн нэрээ бичнэ үү! 😊'); return; }
+  if (!goal || !selectedType) { errCard('card-1', 'Зорилго болон зорилгын төрлөө бичнэ үү! 🎯'); return; }
+  if (!why)               { errCard('card-1', 'Зорилго яагаад чухал болохыг бичнэ үү! 💭'); return; }
+  if (price_val === 0)    { errCard('card-2', 'Шаардлагатай мөнгөн дүнгээ оруулна уу! 💰'); return; }
+  if (!selectedDur)       { errCard('card-2', 'Хэдэн сарын дотор хүрэхээ сонгоно уу! 📅'); return; }
+  if (methods_val.length === 0) { errCard('card-3', 'Орлогын эх үүсвэрээс дор хаяж нэгийг сонгоно уу! 💼'); return; }
+  if (obs_val.length === 0)     { errCard('card-4', 'Саад бэрхшээлээс дор хаяж нэгийг сонгоно уу! 🚧'); return; }
+  if (!document.getElementById('inp-solution').value.trim()) { errCard('card-4', 'Саадыг хэрхэн даван туулахаа бичнэ үү! 💡'); return; }
+  if (commits_val2.length === 0) { errCard('card-5', 'Өөртөө өгөх амлалтаас дор хаяж нэгийг сонгоно уу! 🌿'); return; }
+
+  const btn = document.getElementById('submit-btn');
   btn.textContent = '⏳ Илгээж байна...';
   btn.disabled = true;
 
-  const payload = { name, school, wish, price, have, methods: methods.join(', ') };
+  const payload = {
+    name, school, goal, why, price, have,
+    type: selectedType,
+    duration: selectedDur + ' сар',
+    methods: methods.join(', '),
+    obstacles: obstacles.join(', '),
+    solution, commits: commits.join(', '), commit
+  };
 
   fetch(SCRIPT_URL, {
     method: 'POST',
@@ -555,7 +773,7 @@ function submitForm() {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(payload)
   }).finally(() => {
-    btn.textContent = '🚀 Илгээх!';
+    btn.textContent = '🌟 Илгээх!';
     btn.disabled = false;
     document.getElementById('success').classList.add('show');
     document.getElementById('success').scrollIntoView({ behavior: 'smooth' });
